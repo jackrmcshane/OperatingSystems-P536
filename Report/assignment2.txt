@@ -1,0 +1,10 @@
+author: jack mcshane
+
+Q1: Does your program output any garbage? If yes, why?
+
+Yes, the program is outputting garbage.  This "garbage" can be contributted to the fact that processes in Xinu run concurrently. That said, there is no coordination between the producer and consumer processes (something that would come in the form of semaphores) when it comes to accessing their shared resource/memory. Therefore, consumer is allowed to access and modify the shared variable n at the same time that producer is trying to.
+
+
+Q2: Are all the produced values getting consumed? Check your program for a small count like 20.
+
+Yes, by the time that both processes have exited, all of the produced value have been consumed.
