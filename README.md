@@ -1,13 +1,5 @@
-# Welcome to Xinu
+## Advanced Operating Systems @ IU
 
-# Build instructions
+> This repository houses the work that I did for my graduate level Advanced Operating Systems course at Indiana University.
 
-Copy the file compile/Makedefs.EXAMPLE to compile/Makedefs and make appropriate changes if necessary.  Make sure that the correct COMPILER_ROOT, LIBGCC_LOC and CONF_LFLAGS are set.
-
-The PLATFORM variable should be set to one of:
-
-- arm-qemu
-- arm-bbb
-- x86-qemu
-- x86-galileo
-
+> Over the course of the semester, I added functionality to the Xinu operating system, including: resource sharing, a virtual file system, and a multi-stream data processing program.
